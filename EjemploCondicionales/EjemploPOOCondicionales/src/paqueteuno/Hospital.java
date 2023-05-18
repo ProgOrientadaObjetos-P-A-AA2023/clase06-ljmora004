@@ -16,6 +16,7 @@ public class Hospital {
     private int numeroDoctores;
     private double presupuestoAnual;
     
+    
     // constructores 
     // Objetos para opción 1
     public Hospital(String nombre, int camas, int doctores, double presupueto){

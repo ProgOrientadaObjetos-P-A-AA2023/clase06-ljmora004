@@ -47,7 +47,7 @@ public class Ejecutor {
 
             // se procede a crear el objeto, haciendo uso del constructor
             // que corresponda.
-            Hospital hosp1 = new Hospital(nombreHospital, numeroDeCamas, 
+            Hospital hosp1 = new Hospital(nombreHospital, numeroDeCamas,
                     numeroDeDoctores,
                     presupuestoAnio);
 
@@ -73,7 +73,7 @@ public class Ejecutor {
                 numeroDeDoctores = entrada.nextInt();
                 // se procede a crear el objeto, haciendo uso del constructor
                 // que corresponda.
-                Hospital hosp2 = new Hospital(nombreHospital, numeroDeCamas, 
+                Hospital hosp2 = new Hospital(nombreHospital, numeroDeCamas,
                         numeroDeDoctores);
 
                 System.out.printf("Datos Hospital\n"
@@ -102,8 +102,8 @@ public class Ejecutor {
                     presupuestoAnio = entrada.nextDouble();
                     // se procede a crear el objeto, haciendo uso del constructor
                     // que corresponda.
-                    Hospital hosp3 = new Hospital(nombreHospital, 
-                            ciudadDeHospital, numeroDeCamas, 
+                    Hospital hosp3 = new Hospital(nombreHospital,
+                            ciudadDeHospital, numeroDeCamas,
                             numeroDeDoctores,
                             presupuestoAnio);
 

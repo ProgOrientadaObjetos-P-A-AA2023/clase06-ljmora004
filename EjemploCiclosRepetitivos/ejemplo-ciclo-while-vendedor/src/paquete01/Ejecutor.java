@@ -52,7 +52,6 @@ public class Ejecutor {
             if (opcion.equals("n")) {
                 bandera = false;
             }
-
-        }
+        } 
     }
 }
