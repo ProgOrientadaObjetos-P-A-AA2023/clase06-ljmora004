@@ -10,9 +10,10 @@ public class LibretaCalificacion {
     private double[] calificaciones;
     private Colegio colegio;
 
-    public LibretaCalificacion(String n, double[] c) {
+    public LibretaCalificacion(String n, double[] c, Colegio col) {
         estudiante = n;
         calificaciones = c;
+        colegio = col;
     }
 
     public void establecerColegio(Colegio c) {
@@ -85,7 +86,13 @@ public class LibretaCalificacion {
     @Override
     public String toString() {
         String cadena = "Libreta de Calificaciones\n";
-        cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
+        cadena = String.format("%sColegio: %S\n"
+                + "Ciudad: %S\n"
+                + "Nombre: %s\n"
+                + "Calificaciones:\n", 
+                cadena,
+                colegio.obtenerNombre(),
+                colegio.obtenerCiudad(),
                 obtenerEstudiante());
         // cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
         //        estudiante);
