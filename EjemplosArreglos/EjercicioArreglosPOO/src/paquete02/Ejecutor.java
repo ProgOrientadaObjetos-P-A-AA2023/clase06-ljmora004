@@ -5,6 +5,7 @@
  */
 package paquete02;
 
+import java.util.Locale;
 import java.util.Scanner;
 import paquete01.LibretaCalificacion;
 /**
@@ -15,6 +16,8 @@ public class Ejecutor {
     public static void main(String[] args) {
         // listado de variables para ingreso de datos por teclado
         Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        
         String nombreEstudiante;
         double [] calificacionesEstudiante;
         int numerocalificaciones;
@@ -22,14 +25,14 @@ public class Ejecutor {
         // Ingreso de valores por teclado
         System.out.println("Ingrese el nombre del estudiante");
         nombreEstudiante = entrada.nextLine();
-        System.out.println("Ingrese el número de calificaciones");
+        System.out.println("Ingrese el numero de calificaciones");
         numerocalificaciones = entrada.nextInt();
         // con el numerocalificaciones se crea el objeto arreglo de
         // calificaciones tipo double
         calificacionesEstudiante = new double[numerocalificaciones];
         
         for (int i = 0; i < numerocalificaciones; i++) {
-            System.out.printf("Ingrese calificación %d\n", i+1);
+            System.out.printf("Ingrese calificacion %d\n", i+1);
             calificacionesEstudiante[i] = entrada.nextDouble();
         }
         
